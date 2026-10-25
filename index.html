@@ -17,14 +17,35 @@
     figure img { display: block; width: 100%; height: auto; border: 1px solid #d9e4dc; border-radius: 12px; }
     figcaption { margin: 10px 4px 0; line-height: 1.5; }
     .note { padding: 14px 18px; background: #e8f2e9; border-radius: 10px; line-height: 1.5; }
-    .exercise-nav { display: flex; justify-content: flex-end; margin-top: 28px; }
-    .exercise-nav a { display: inline-block; padding: 10px 14px; border: 1px solid #bfd7cb; border-radius: 8px; background: white; color: #17665b; text-decoration: none; }
-    .exercise-nav a:hover, .exercise-nav a:focus-visible { background: #e5efe9; text-decoration: underline; }
+
+.site-nav { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 12px 0 18px; margin: 0 0 24px; border-bottom: 1px solid #e2e8f0; background: #fff; }
+.site-brand { font-size: 13px; font-weight: 750; color: #334155; letter-spacing: .04em; white-space: nowrap; }
+.site-nav-links { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.site-nav-links a { display: inline-block; padding: 8px 12px; border-radius: 7px; color: #475569; font-size: 14px; font-weight: 600; text-decoration: none; }
+.site-nav-links a:hover, .site-nav-links a:focus-visible { background: #f1f5f9; color: #1e3a5f; }
+.site-nav-links a[aria-current="page"] { background: #e9eef7; color: #1e3a5f; }
+@media (max-width: 600px) { .site-nav { align-items: flex-start; } .site-brand { width: 100%; } .site-nav-links { gap: 2px; } .site-nav-links a { padding: 7px 9px; } }
+
+body { background: #ffffff; color: #172334; }
+main { width: min(100% - 36px, 1200px); margin: 0 auto 56px; }
+.intro, figcaption { color: #536171; }
+.scene, figure img { box-shadow: none; border: 1px solid #d9e1e8; border-radius: 10px; }
+figure { margin-top: 24px; }
+.note { background: #f7f9fc; border: 1px solid #e2e8f0; }
   </style>
 </head>
 <body>
 <main>
-  <nav><a href="https://github.com/chanhnghi/COS30045_Demo2_Exercise4.3-4.7_106216641">← Demonstration 2 repository</a></nav>
+      <nav class="site-nav" aria-label="Main navigation">
+      <span class="site-brand">COS30045 / Demo 2</span>
+      <div class="site-nav-links">
+      <a href="../COS30045_Demo2_Exercise4.3-4.7_106216641/hub.html">Home</a>
+      <a href="index.html" aria-current="page">4.1</a>
+      <a href="../COS30045_Demo2_Exercise4.3-4.7_106216641/index.html">4.3–4.7</a>
+      <a href="../COS30045_Demo2_Exercise5_106216641/index.html">5</a>
+      <a href="../COS30045_Demo2_Exercise6_106216641/index.html">6</a>
+      </div>
+    </nav>
   <h1>Exercise 4.1 · Garden Cottage</h1>
   <p class="intro">A house and garden drawn with SVG shapes and coordinates.</p>
 
@@ -107,9 +128,7 @@
     <img src="images/svg-dom.png" alt="The Garden Cottage SVG displayed beside its expanded SVG elements in Brave Developer Tools.">
     <figcaption>Step 5 · The finished SVG and its corresponding DOM elements in the browser.</figcaption>
   </figure>
-  <nav class="exercise-nav" aria-label="Exercise navigation">
-    <a href="https://github.com/chanhnghi/COS30045_Demo2_Exercise4.3-4.7_106216641">Next: 4.3–4.7 · TV brand chart repository →</a>
-  </nav>
+
 </main>
 </body>
 </html>
