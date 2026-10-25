@@ -1,2 +1,5 @@
-# COS30045_Demo2_Exercise4.1_106216641
-COS30045 Demonstration 2 - Exercise 4.1 SVG house
+# Exercise 4.1 — Garden cottage
+
+Open [index.html](index.html) in a browser. The page contains an original house-and-garden SVG and a coordinate annotation image. The two windows share a parent group for common styling and each uses a translation to set its position.
+
+The Step 5 screenshot of the SVG beside the browser DOM is included in `images/svg-dom.png`.
