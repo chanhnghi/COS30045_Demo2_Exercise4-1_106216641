@@ -1,0 +1,329 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  margin: 0;
+
+  background: #f5f5ef;
+
+  color: #19352f;
+
+  font-family: Arial, sans-serif;
+
+}
+
+
+
+main {
+
+  width: min(100% - 28px, 1050px);
+
+  margin: 24px auto 60px;
+
+}
+
+
+
+nav {
+
+  margin-bottom: 16px;
+
+}
+
+
+
+nav a {
+
+  color: #17665b;
+
+}
+
+
+
+h1 {
+
+  margin: 0 0 6px;
+
+  font-size: clamp(28px, 4vw, 42px);
+
+}
+
+
+
+.intro {
+
+  margin: 0 0 20px;
+
+  color: #48645c;
+
+}
+
+
+
+.scene {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 18px;
+
+  box-shadow: 0 12px 35px #21493d20;
+
+}
+
+
+
+figure {
+
+  margin: 34px 0 0;
+
+}
+
+
+
+figure img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  border: 1px solid #d9e4dc;
+
+  border-radius: 12px;
+
+}
+
+
+
+figcaption {
+
+  margin: 10px 4px 0;
+
+  line-height: 1.5;
+
+}
+
+
+
+.note {
+
+  padding: 14px 18px;
+
+  background: #e8f2e9;
+
+  border-radius: 10px;
+
+  line-height: 1.5;
+
+}
+
+
+
+.site-nav {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+
+  padding: 12px 0 18px;
+
+  margin: 0 0 24px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  background: #fff;
+
+}
+
+
+
+.site-brand {
+
+  font-size: 13px;
+
+  font-weight: 750;
+
+  color: #334155;
+
+  letter-spacing: .04em;
+
+  white-space: nowrap;
+
+}
+
+
+
+.site-nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.site-nav-links a {
+
+  display: inline-block;
+
+  padding: 8px 12px;
+
+  border-radius: 7px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+}
+
+
+
+.site-nav-links a:hover,
+
+.site-nav-links a:focus-visible {
+
+  background: #f1f5f9;
+
+  color: #1e3a5f;
+
+}
+
+
+
+.site-nav-links a[aria-current="page"] {
+
+  background: #e9eef7;
+
+  color: #1e3a5f;
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .site-nav {
+
+    align-items: flex-start;
+
+  }
+
+
+
+  .site-brand {
+
+    width: 100%;
+
+  }
+
+
+
+  .site-nav-links {
+
+    gap: 2px;
+
+  }
+
+
+
+  .site-nav-links a {
+
+    padding: 7px 9px;
+
+  }
+
+}
+
+
+
+body {
+
+  background: #ffffff;
+
+  color: #172334;
+
+}
+
+
+
+main {
+
+  width: min(100% - 36px, 1200px);
+
+  margin: 0 auto 56px;
+
+}
+
+
+
+.intro,
+
+figcaption {
+
+  color: #536171;
+
+}
+
+
+
+.scene,
+
+figure img {
+
+  box-shadow: none;
+
+  border: 1px solid #d9e1e8;
+
+  border-radius: 10px;
+
+}
+
+
+
+figure {
+
+  margin-top: 24px;
+
+}
+
+
+
+.note {
+
+  background: #f7f9fc;
+
+  border: 1px solid #e2e8f0;
+
+}
